@@ -3,7 +3,7 @@ function megaSum(){
   var argArray = Array.from(arguments)
   
   function onlyNumbers(elem){
-    return typeof(elem) == 'number'
+    return typeof(elem) == 'number' && !isNaN(elem)
   }
 
   function accumulate(elem){
